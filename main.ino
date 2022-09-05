@@ -1,6 +1,7 @@
 #include <esp_now.h>
 #include <WiFi.h>
 #include "library/Data.h"
+#include "library/Screen.h"
 
 Data main_data;
 
@@ -8,6 +9,7 @@ void data_receive(const unit8_t *mac, const unit8_t *incomingData, int len)
 {
     memcpy(&main_data, incomingData, sizeof(main_data));
 }
+
 
 void setup()
 {
