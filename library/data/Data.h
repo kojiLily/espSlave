@@ -15,7 +15,7 @@ public:
     void setSituate(String value);
     void setLink(String value);
     void setDepartment(String value);
-    void setAll(byte id, String nameFirst, String nameLast, String situate, String link, String department);
+    void setAll(byte id, String nameFirst, String nameLast, String situate, char* link, String department);
 
     // getter
     byte getId();
